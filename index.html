@@ -22,6 +22,7 @@
 		</noscript>
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<link rel="stylesheet" href="css/cookiecuttr.css">
 	</head>
 	<body>
 
@@ -139,6 +140,17 @@
 					<li>&copy;Arated.com 2015</li><!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
 				</ul>
 			</section>
+		<script src="js/plugins/jquery.cookie.js"></script>
+		<script src="js/plugins/jquery.cookiecuttr.js"></script>
+		<script type="text/javascript">
+				$(document).ready(function () {
+					// activate cookie cutter
+   					$.cookieCuttr({
+   					//cookieDeclineButton: true,
+    				cookieAnalyticsMessage: "We use cookies, just to track visits to our website, we store no personal details."
+    				});
+				});      
+		</script>
 
 	</body>
 </html>
